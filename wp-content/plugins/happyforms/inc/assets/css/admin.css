@@ -1,0 +1,123 @@
+.happyforms-upgrade-modal-container {
+  display: none;
+}
+
+.happyforms-upgrade-modal {
+  position: relative;
+  text-align: center;
+}
+
+.happyforms-upgrade-modal .happyforms-logo {
+  width: 200px;
+  max-width: 100%;
+}
+
+.happyforms-upgrade-modal h2 {
+  margin: 0 0 10px 0;
+  padding-bottom: 5px;
+  font-size: 1.7em;
+}
+
+.happyforms-upgrade-modal p {
+  max-width: 71%;
+  margin: 0 auto 10px;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 600px) {
+  .happyforms-upgrade-modal p {
+    max-width: 100%;
+  }
+}
+
+.happyforms-upgrade-modal .happyforms-upgrade-modal__buttons {
+  margin-top: 1.5em;
+}
+
+.happyforms-upgrade-modal .happyforms-upgrade-modal__button {
+  margin-bottom: 15px;
+}
+
+.happyforms-upgrade-modal .happyforms-upgrade-modal__button:last-child {
+  margin-bottom: 0;
+}
+
+.happyforms-upgrade-modal .happyforms-upgrade-modal__button a.button {
+  padding: 11px 22px;
+  height: auto;
+  font-size: 14px;
+  white-space: normal;
+}
+
+.happyforms-upgrade-modal .happyforms-upgrade-modal__button--grey,
+a.happyforms-continue-link,
+a.happyforms-continue-link:hover {
+  color: #82878C;
+}
+
+.happyforms-upgrade-modal form {
+  display: none;
+  flex-flow: row nowrap;
+  align-items: center;
+  max-width: 297px;
+  margin: -4px auto 15px;
+}
+
+.happyforms-upgrade-modal form.shown {
+  display: flex;
+  height: 54px;
+  overflow: hidden;
+}
+
+.happyforms-upgrade-modal select {
+  flex: 1;
+  max-width: 165px;
+  height: 100%;
+}
+
+.happyforms-upgrade-modal input[type=submit] {
+  min-width: 120px;
+  height: 52px;
+  margin-left: 10px;
+  padding: 0 25px;
+  font-size: 15px;
+}
+
+#TB_window.happyforms-admin-modal {
+  width: 100% !important;
+  height: 100% !important;
+  top: 0 !important;
+  left: 0 !important;
+  margin-top: 0 !important;
+  margin-left: 0 !important;
+  background-color: transparent !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+#TB_window.happyforms-admin-modal #TB_title {
+  position: relative;
+  height: 35px;
+  padding: 0 15px;
+}
+
+#TB_window.happyforms-admin-modal #TB_ajaxContent {
+  padding: 45px 15px;
+  overflow: hidden;
+  background-color: #fff;
+  -webkit-box-shadow: 0 3px 6px rgba( 0, 0, 0, 0.3 );
+  box-shadow: 0 3px 6px rgba( 0, 0, 0, 0.3 );
+}
+
+#TB_window.happyforms-admin-modal #TB_closeWindowButton {
+  top: 4px;
+}
+
+#TB_window.happyforms-admin-modal #TB_closeWindowButton:focus .tb-close-icon {
+  box-shadow: none;
+  color: #666;
+}
